@@ -1,14 +1,22 @@
-<div>
-    <label for="city"> City: </label>
-    <label>{{city}}</label>
-     <br>
-    <label for="summary"> Descricao:</label>
-    <label>{{summary}}</label>
-     <br>
-  <label for="isRaining"> is it Raining ?</label>
- <label>{{isRaining}}</label>
-  <br>
-  <label for="timeToRain">how long until it rains:</label>
-  <label>{{timeToRain}}</label> 
-</div>
+<div id="container" class="container-fluid">
+  <div class="row">
+     <div class="col-xs-12 col-md-12 col-lg-6 pineaple">
+   <img class="eyebrows" src={{pineaple.eyebrows}}>
+   <img class="base" src="../assets/imgs/base.png">
+   
+   <img id="eyes" class="eyes"src="{{pineaple.eyes}}"> 
+   <img id="mouth" class="mouth"src="{{pineaple.mouth}}"> 
+   <img class="shadow"src="../assets/imgs/shadow.png"> 
+   
+   <div class="weather">
+     <h1 style="color:orange"> Weather Info: </h1>
+     <p> {{summary}} </p>
+     </div>
+     </div>
+  </div>
+   
+
+    
+  
+
   

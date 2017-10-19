@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
+img{
+  width: 70%;
+  height:auto;  
+}
+.pineaple{
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-content: flex-end;
+  position: relative;
+  text-align: center;
+ 
+  min-height: 100vh;
+ 
+  
+}
+.container{
+  overflow: hidden;
+}
+.base{
+  
+position:absolute;
+top: 0;
+left: 0;
+  width: 100%;
+  height: auto;
+  
+ z-index: 10;
+ 
+
+}
+.eyes{
+  z-index:11;
+ position: absolute;
+  top:150px;
+  width: 90%;
+  height: auto;
+  left: 4%;
+}
+.eyebrows{
+  z-index:12;
+ position: absolute;
+  top:100px;
+  width: 90%;
+
+  left: 5%;
+}
+.mouth{
+   z-index:11;
+ position: absolute;
+  top:75px;
+  width: 90%;
+  height: auto;
+  left: 7%;
+}
+.shadow{
+   z-index:11;
+ position: absolute;
+  top:150px;
+  width: 90%;
+  height: auto;
+  left: 3%;
+}
+.weather{
+ margin-bottom: 30vh;
+  width: 100%;
+  text-align: center;
+  
+  
+  font-family: 'Fascinate Inline', cursive;
+}
+.weather p{
+  font-size: 1.2em;
+}
+.container-fluid{
+ 
+height: 100vh;
+  background-color: #FFC59B;
+
+}

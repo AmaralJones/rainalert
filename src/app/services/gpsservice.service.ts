@@ -46,7 +46,7 @@ coords:Coords = {latitude : '',longitude:''};
    // checkRain(this.coords);
   }
   checkLocation(checkRain){
-    
+    //context.summary ="getting gps coords";
     //this.lat = 1 ;
    let chk =  navigator.geolocation.getCurrentPosition((position)=>this.setPosition(position,checkRain));
    
