@@ -24,13 +24,13 @@ export class MainuiComponent implements OnInit {
     let mouth = document.getElementById("mouth");
    this.rainserv.summary.subscribe((update)=>{this.summary = update;
      //this.pineaple.eyes = "../assets/imgs/eyes_closed.png";
-   this.pineaple.mouth = "../assets/imgs/mouth_open.png";
+   this.pineaple.mouth = "../mouth_open.png";
     // let eyes = document.getElementById("eyes");
   
   mouth.style.top = "240px";
    mouth.style.left="5%";
     //eyes.style.marginTop = "20px";
-    setTimeout(()=>{this.pineaple.eyes = "../assets/imgs/eyes_normal.png";
+    setTimeout(()=>{this.pineaple.eyes = "../eyes_normal.png";
 //this.pineaple.mouth = "../assets/imgs/mouth_closed.png";
   // mouth.style.top = "75px";
   
@@ -41,17 +41,17 @@ export class MainuiComponent implements OnInit {
    // controler.blink(this.pineaple);
    this.pineaple = {eyes:"none",eyebrows:"none",mouth:"none"};
 
-   this.pineaple.eyes = "../assets/imgs/eyes_normal.png";
-  this.pineaple.mouth = "../assets/imgs/mouth_closed.png";
+   this.pineaple.eyes = "../eyes_normal.png";
+  this.pineaple.mouth = "../mouth_closed.png";
   mouth.style.top = "75px";
-   this.pineaple.eyebrows = "../assets/imgs/eyebrows_normal.png";
+   this.pineaple.eyebrows = "../eyebrows_normal.png";
    let blinktime = 0;
     var  normal;
  let blinking = setInterval(function(){
    blinktime= Math.floor(Math.random() * 5000);
   this.pineaple.eyes = "";
  normal = setTimeout(function(){
- this.pineaple.eyes =  "../assets/imgs/eyes_normal.png";
+ this.pineaple.eyes =  "../eyes_normal.png";
   }.bind(this),200)
   
  }.bind(this),3000 - blinktime) 
@@ -107,11 +107,11 @@ export class MainuiComponent implements OnInit {
   mouth_open:string;
   mouth_closed:string;
 constructor(){
-  this.eyes_normal = "../assets/imgs/eyes_normal.png";
-  this.eyes_blinking = "../assets/imgs/eyes_blinking.png";
-  this.eyes_talking =  "../assets/imgs/eyes_talking.png";
-  this.mouth_open = "../assets/imgs/mouth_open.png";
-  this.mouth_closed = "../assets/imgs/mouth_closed.png";
+  this.eyes_normal = "../eyes_normal.png";
+  this.eyes_blinking = "../eyes_blinking.png";
+  this.eyes_talking =  "../eyes_talking.png";
+  this.mouth_open = "../mouth_open.png";
+  this.mouth_closed = "../mouth_closed.png";
 }
 public change(mood){
 
